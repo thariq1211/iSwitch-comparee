@@ -1,0 +1,225 @@
+    body 
+    {
+      font-family: "Lato", sans-serif;
+    }
+
+    .sidebar 
+    {
+      background-color: #A4A7FD;
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      transition: 0.5s;
+      padding-top: 38px;
+    }
+
+    .sidebar a 
+    {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #707070;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover 
+    {
+      color: #f1f1f1;
+      text-decoration: none;
+    }
+
+    .sidebar .closebtn 
+    {
+      color: white;
+      padding: unset;
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 28px;
+      margin-left: 50px;
+      margin-top: -4px;
+    }
+    .sidebar .closebtn:hover
+    {
+        color: #707070;
+    }
+
+    .sidebar .logo-mk 
+    {
+      position: absolute;
+      width: 25px;
+      top: 0;
+      margin-top: 7px;
+      margin-left: 30px;
+      margin-right: auto;
+    }
+    .broadcast-scroolbar 
+    {
+      position: relative;
+      overflow: auto;
+      padding: 10px;
+      height: 243px;
+    }
+
+    .sidebarMenu 
+    {
+      background-color: white;
+      height: 100%;
+    }
+    .list-group-item
+    {
+      border: unset;
+      padding: .15rem 1rem;
+    }
+    .list-group-item .queue
+    {
+      font-size: 9px;
+      width: 177px;
+    }
+    .list-queue
+    {
+      margin-top: -6px;
+      margin-left: -16px;
+      margin-right: -10px;
+    }
+    .openbtn 
+    {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #111;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+    }
+
+    .openbtn:hover 
+    {
+      background-color: #444;
+    }
+    .cirle-img 
+    {
+      border-radius: 20rem;
+      width: 85px;
+    }
+    .btn-status
+    {
+      font-size: 10px;
+      color: #707070;
+      background-color: white;
+      border-color: transparent;
+      width: 215px;
+      height: 29px;
+      border-radius: 50rem;
+    }
+    .btn-status:hover
+    {
+      border-color: transparent;
+      background-color: #A4A7FD;
+    }
+    .btn-user
+    {
+      font-size: 10px;
+      color: white;
+      background-color: #A4A7FD;
+      border-color: transparent;
+      width: 215px;
+      height: 29px;
+      border-radius: 50rem;
+    }
+    .btn-user:hover
+    {
+      background-color: white;
+      color: gray;
+      border-color: transparent;
+    }
+    .badge-marketing
+    {
+      color:#32C26B;
+      background-color:white;
+    }
+    .badge-sales
+    {
+      color:#FF6B6B;
+      background-color:white;
+    }
+    .badge-support
+    {
+      color:#F5C84D;
+      background-color:white;
+    }
+    .card-header-outter
+    {
+      font-size: 10px;
+      color: white;
+      background-color: #a4a7fd;
+      padding: .20rem 1.25rem;
+    }
+    .card-body
+    {
+      padding: 0.75rem;
+    }
+    .card-body h1
+    {
+      margin-bottom: 0.2rem;
+      font-size: 8px;
+      color: #7DBCDF;
+    }
+    .card-body p
+    {
+      font-size: 7px;
+      color: #C1C1C1;
+    }
+    .item-card
+    {
+      font-size: 9px;
+      padding: .20rem 0.5rem;
+    }
+    .menu-bar
+    {
+      padding: 20px 0px 0px 60px;
+      /* padding-top: 20px; */
+      border-right: #A4A7FD solid 1px;
+    }
+    .content-bar
+    {
+      padding-top: 20px;
+      padding-left: 5vw;
+    }
+    .content
+    {
+      background-color: white;
+      margin: 5px;
+      height: 100%;
+    }
+    #main 
+    {
+      overflow: hidden;
+      transition: margin-left .5s;
+      padding: 16px;
+      margin-left: 284px;
+      height: 768px;
+    }
+
+    #mySidebar 
+    {
+      width: 284px;
+    }
+
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) 
+    {
+      .sidebar 
+      {
+        padding-top: 15px;
+      }
+
+      .sidebar a 
+      {
+        font-size: 18px;
+      }
+    }
