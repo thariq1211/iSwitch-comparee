@@ -135,6 +135,25 @@
       border-color: transparent;
       background-color: #A4A7FD;
     }
+    .form-control
+    {
+      font-size: 10px;
+      color: #A4A7FD;
+    }
+    .form-user-l
+    {
+      width: 580px;
+      height: 34px;
+    }
+    .form-user-s
+    {
+      width: 364px;
+      height: 34px;
+    }
+    .table-form
+    {
+      margin-left: -15px;
+    }
     .btn-user
     {
       font-size: 10px;
@@ -146,6 +165,21 @@
       border-radius: 50rem;
     }
     .btn-user:hover
+    {
+      background-color: white;
+      color: gray;
+      border-color: transparent;
+    }
+    .btn-save
+    {
+      font-size: 12px;
+      color: white;
+      background-color: #A4A7FD;
+      border-color: transparent;
+      width: 580px;
+      height: 34px;
+    }
+    .btn-save:hover
     {
       background-color: white;
       color: gray;
@@ -218,16 +252,20 @@
     }
     #main 
     {
+      position: fixed;
       overflow: hidden;
       transition: margin-left .5s;
       padding: 7px;
+      padding-bottom: 15px;
       margin-left: 284px;
       height: 766px;
+      width: 1080px;
     }
 
     #mySidebar 
     {
       width: 284px;
+      position: fixed;
     }
 
     /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

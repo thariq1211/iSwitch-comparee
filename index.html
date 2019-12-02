@@ -4,6 +4,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>iSwitch Project</title>
+  <link rel="shortcut icon" href="assets/img/logo-mk.png">
   <!-- bootstrap css -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -24,14 +25,13 @@
     <div class="sidebarHeader">
       <img src="assets/img/logo-mk.png" class="logo-mk">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <a href="javascript:void(0)" class="openbtn" onclick="openNav()">☰</a>
     </div>
     <div class="sidebarMenu">
       <ul class="list-group">
         <li class="list-group-item p-2">
           <div class="row">
             <div class="col-12 text-center">
-              <img src="assets/img/img-profile.png" class="cirle-img" />
+              <img src="assets/img/img-profile.png" onclick="openNav()" class="cirle-img" />
             </div>
             <h5 class="col-12 text-center" style="font-size: 17px;">User Name</h5>
             <span class="col-12 text-center" style="font-size: 12px;">19 Desember 2019</span>
@@ -138,25 +138,67 @@
       </div>
       <div class="content-bar col-9">
         <h1>PROFILE</h1>
-        <form class="shadow">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+        <form>
+          <table class="table table-borderless table-form">
+            <tbody>
+              <tr>
+                <td rowspan="3" class="text-center align-self-center" style="padding-top: 30px;"><img
+                    src="assets/img/img-profile.png" class="cirle-img" style="width: 150px;"></td>
+                <td>
+                  <div class="form-group">
+                    <input type="text" placeholder="Agent Name" class="form-control form-user-s" id="exampleInputEmail1"
+                      aria-describedby="emailHelp">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-group">
+                    <input type="text" placeholder="Username" class="form-control form-user-s" id="exampleInputEmail1"
+                      aria-describedby="emailHelp">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-group">
+                    <input type="password" placeholder="Password" class="form-control form-user-s"
+                      id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <div class="form-group">
+                    <input type="number" placeholder="Number" class="form-control form-user-l"
+                      id="exampleInputPassword1">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <div class="form-group">
+                    <!-- <input type="number" placeholder="Status" class="form-control form-user-l"
+                      id="exampleInputPassword1"> -->
+                    <select class="form-control form-user-l" aria-placeholder="Status" id="exampleFormControlSelect1">
+                      <option disabled>Status</option>
+                      <option>Available</option>
+                      <option>Idle</option>
+                      <option>Busy</option>
+                    </select>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-save shadow">Save</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </form>
-        <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
-        <h2>Collapsed Sidebar</h2>
-        <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
       </div>
     </div>
   </div>
@@ -165,12 +207,15 @@
     function openNav() {
       document.getElementById("mySidebar").style.width = "284px";
       document.getElementById("main").style.marginLeft = "284px";
+      document.getElementById("main").style.width = "1080px";
     }
 
     function closeNav() {
       document.getElementById("mySidebar").style.width = "80px";
       document.getElementById("main").style.marginLeft = "80px";
+      document.getElementById("main").style.width = "1285px";
     }
+
     var myCustomScrollbar = document.querySelector(".my-custom-scrollbar");
     var ps = new PerfectScrollbar(myCustomScrollbar);
 
