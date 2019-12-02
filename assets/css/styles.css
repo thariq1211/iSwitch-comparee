@@ -180,17 +180,17 @@
     .card-body h1
     {
       margin-bottom: 0.2rem;
-      font-size: 8px;
+      font-size: 10px;
       color: #7DBCDF;
     }
     .card-body p
     {
-      font-size: 7px;
+      font-size: 10px;
       color: #C1C1C1;
     }
     .item-card
     {
-      font-size: 9px;
+      font-size: 10px;
       padding: .20rem 0.5rem;
     }
     .menu-bar
