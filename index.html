@@ -121,17 +121,38 @@
   </div>
 
   <div id="main">
-    <div class="row content shadow p-3 overflow-hidden">
+    <div class="row content shadow">
       <div class="menu-bar col-3">
-        <ul class="list-group">
-          <li class="list-group-item"><span>Item 1</span></li>
-          <li class="list-group-item"><span>Item 2</span></li>
-          <li class="list-group-item"><span>Item 3</span></li>
-          <li class="list-group-item"><span>Item 4</span></li>
+        <ul class="list-group" style="margin-top: 40px;">
+          <a href="#" class="list-group-item menu-item list-group-item-action"><span
+              class="fa fa-user-circle"></span>&emsp;Account</a>
+          <a href="#" class="list-group-item menu-item list-group-item-action"><span
+              class="fa fa-volume-down"></span>&emsp;Sound</a>
+          <a href="#" class="list-group-item menu-item list-group-item-action"><span
+              class="fa fa-bars"></span>&emsp;Login
+            Server</a>
+          <a href="#" class="list-group-item menu-item list-group-item-action"><span
+              class="fa fa-sign-in-alt"></span>&emsp;CRM</a>
         </ul>
       </div>
       <div class="content-bar col-9">
-        <h1>Hello World</h1>
+        <h1>PROFILE</h1>
+        <form class="shadow">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
         <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>
         <h2>Collapsed Sidebar</h2>
         <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>

@@ -87,6 +87,20 @@
       margin-left: -16px;
       margin-right: -10px;
     }
+    .menu-item
+    {
+      padding-left: 65px;
+      height: 46px;
+      text-align: justify;
+      line-height: 40px; 
+      box-sizing: border-box; 
+      color: #C1C1C1;    
+    }
+    .menu-item:hover
+    {
+      color: #A4A7FD;
+      border-right: #A4A7FD solid 2px;
+    }
     .openbtn 
     {
       font-size: 20px;
@@ -181,14 +195,20 @@
     }
     .menu-bar
     {
-      padding: 20px 0px 0px 60px;
-      /* padding-top: 20px; */
+      text-align: center;
       border-right: #A4A7FD solid 1px;
+      padding-left: unset;
+      padding-right: unset;
     }
     .content-bar
     {
-      padding-top: 20px;
+      padding-top: 55px;
       padding-left: 5vw;
+    }
+    .content-bar h1
+    {
+      font-size: 17px;
+      color: #777777;
     }
     .content
     {
@@ -200,9 +220,9 @@
     {
       overflow: hidden;
       transition: margin-left .5s;
-      padding: 16px;
+      padding: 7px;
       margin-left: 284px;
-      height: 768px;
+      height: 766px;
     }
 
     #mySidebar 
